@@ -1,25 +1,32 @@
-.form.orcamento :nth-child(6){
-   margin-top: 64px;
+.form.orcamento :nth-child(6) {
+  margin-top: 64px;
 }
-.form-termos{
-   display: grid;
-   grid-template-columns: auto 1fr;
-   gap: 8px;
-   align-content: center;
+.form-termos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-content: center;
 }
-.form.orcamento h3{
-    display: flex;
-    align-items: center;
-    gap: 0 4px;
+.form.orcamento h3 {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
 }
-.form.orcamento h3::before{
-content: "";
-display: inline-block;
-background: var(--cor-p1);
-width: 16px;
-height: 8px;
+.form.orcamento > h3::before {
+  content: "";
+  display: inline-block;
+  background: var(--cor-p1);
+  width: 16px;
+  height: 8px;
 }
 .form.orcamento {
-padding-bottom: 160px;
-
+  padding-bottom: 160px;
+}
+@media (max-width: 500px) {
+  #tipo-seguro ul h3 span::after {
+    font-size: 0.7rem;
+  }
+  #tipo-seguro ul h3 {
+    font-size: 1.8rem;
+  }
 }
