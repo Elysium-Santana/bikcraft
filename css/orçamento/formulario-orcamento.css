@@ -28,5 +28,6 @@
   }
   #tipo-seguro ul h3 {
     font-size: 1.8rem;
+    gap: 20px;
   }
 }
