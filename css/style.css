@@ -1,0 +1,41 @@
+/*global*/
+@import url("../css/global/global.css");
+@import url("../css/global/header.css");
+@import url("../css/global/titulo.css");
+@import url("../css/global/footer.css");
+@import url("../css/global/formulario.css");
+
+/*home*/
+@import url("../css/home/introducao.css");
+@import url("../css/home/bicicletas.css");
+@import url("../css/home/tecnologia.css");
+@import url("../css/home/parceiros.css");
+@import url("../css/home/depoimento.css");
+@import url("../css/home/seguros.css");
+
+/*seguros*/
+@import url("../css/seguros/seguro-perguntas.css");
+@import url("../css/seguros/seguro-vantagens.css");
+
+/*termos*/
+@import url("../css/termos/termos.css");
+
+/*orçamento*/
+@import url("../css/orçamento/formulario-orcamento.css");
+@import url("../css/orçamento/orcamento-produto.css");
+
+/*contato*/
+@import url("../css/contatos/contatos-formulario.css");
+@import url("../css/contatos/contatos-loja.css");
+
+/*bicicletas*/
+@import url("../css/bicicletas/bicicleta.css");
+@import url("../css/bicicletas/bicicleta-interna-seguro.css");
+@import url("../css/bicicletas/bike.css");
+
+/*utilitarios*/
+@import url("../css/global/utilitrarios/botao.css");
+@import url("../css/global/utilitrarios/animações.css");
+@import url("../css/global/utilitrarios/tipografia.css");
+@import url("../css/global/utilitrarios/cores.css");
+@import url("../css/global/utilitrarios/espacamento-grid.css");

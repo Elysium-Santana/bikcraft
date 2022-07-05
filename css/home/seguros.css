@@ -1,0 +1,62 @@
+#btn-prata {
+  background: linear-gradient(#b8b8b8 0%, #484848 100%);
+  color: #111111;
+}
+
+.seguros ul h3 span::after {
+  content: "mensal";
+  display: block;
+  text-transform: lowercase;
+  font-size: 1.125rem;
+  text-align: right;
+}
+.seguros ul h3 {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.seguros ul li::before {
+  content: "";
+  display: inline-block;
+  background: url("../../img/icones/list.svg") no-repeat center;
+  height: 9px;
+  width: 13px;
+  margin-right: 4px;
+}
+.seguros ul li {
+  margin-bottom: 24px;
+}
+.seguros ul {
+  background-color: var(--cor-12);
+  border-radius: 5px;
+  padding: 36px 64px;
+}
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.seguros-bg h1 {
+  margin-bottom: 80px;
+}
+.seguros-bg {
+  padding: 120px 0px;
+  background-color: var(--cor-11);
+}
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
+  .seguros-bg {
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .seguros ul h3 span::after {
+    font-size: 0.7rem;
+  }
+  .seguros ul h3 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,40 @@
+#seguro.titulo-bg,
+#seguro h1 {
+  margin-bottom: 0px;
+}
+.vantagens-bg h1 {
+  margin-bottom: 120px;
+}
+.vantagens-bg {
+  background-color: var(--cor-12);
+  padding: 120px 0;
+  margin-bottom: 120px;
+}
+.vantagens-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(334px, max-content));
+  gap: 40px;
+}
+.vantagens-conteudo p {
+  max-width: 40ch;
+}
+.vantagens-conteudo h3,
+.vantagens-conteudo img {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .vantagens-bg {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+  .vantagens-bg h1 {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 400px) {
+  .vantagens-conteudo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+
+.contato li:nth-child(odd)::after{
+  content: "";
+  display: block;  
+  max-width: 320px;
+  height: 3px;
+  background: #111111;
+  margin-top: 32px;  
+}
+.footer-conteudo li{
+margin-bottom: 24px;
+} 
+  
+ 
+.footer-conteudo span{
+  display: block;
+  margin-bottom: 40px;  
+  font-size: 18px;
+}
+.footer-conteudo{
+  display: grid;
+  grid-template-columns: 4fr 5fr 3fr;
+  padding: 64px 0;
+
+}
+.footer-bg{
+  background-color: var(--cor-12);
+}
+.redes{
+  display: flex;
+  gap: 32px;
+  
+}
+.footer-conteudo a:hover{ 
+color: var(--cor-0);
+}
+.footer-conteudo p{
+  align-self: end;
+  grid-area: 2/1;  
+  
+}
+
+@media (max-width:800px){
+  .footer-conteudo img{
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-bottom: 32px;
+  }
+    
+  
+  .footer-conteudo{
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  }
+  .redes {
+    grid-column: 1/-1;
+    justify-self: center;
+
+  }
+  .footer-conteudo p{
+    align-self: end;
+    grid-area: initial;  
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width:600px){
+  .footer-conteudo{
+  grid-template-columns: 1fr;
+  }
+}

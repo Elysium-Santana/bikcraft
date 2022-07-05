@@ -1,0 +1,114 @@
+.bicicleta-bg:nth-child(2) {
+  background: linear-gradient(to right, #ffffff 30%, #000000 0%);
+}
+.bicicleta-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bicicleta-lista li {
+  display: flex;
+  margin-bottom: 16px;
+  grid-column: 1;
+  gap: 4px;
+  align-items: center;
+}
+.bicicleta-lista a {
+  margin-bottom: 16px;
+  place-self: start;
+}
+.botao.seta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.botao.seta:hover:after {
+  transform: translateX(6px);
+}
+.botao.seta::after {
+  content: "";
+  display: block;
+  background: url("../../img/icones/seta.svg") no-repeat center;
+  width: 18px;
+  height: 10px;
+  transition: 0.2s;
+}
+.bicicleta-bg:last-child {
+  margin-bottom: 120px;
+}
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.bicicleta-imagem img {
+  grid-area: 1/1;
+}
+.bicicleta-imagem span {
+  place-self: start end;
+  grid-area: 1/1;
+  background-color: var(--cor-12);
+  padding: 8px 12px;
+  border-radius: 5px 0 0 5px;
+  margin-top: 20px;
+}
+.bicicleta-imagem {
+  display: grid;
+  align-self: center;
+}
+
+.bicicleta-conteudo {
+  align-items: start;
+}
+.bicicleta-conteudo p {
+  margin-bottom: 24px;
+  max-width: 40ch;
+}
+.bicicleta-conteudo h3 {
+  margin-bottom: 24px;
+}
+.bicicleta-conteudo h3:before {
+  content: "";
+  display: block;
+  background: var(--cor-p1);
+  width: 20px;
+  height: 8px;
+  border-radius: 2px;
+}
+@media (max-width: 800px) {
+  .bicicleta-conteudo p {
+    max-width: 50ch;
+  }
+
+  .bicicleta-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bicicleta-lista li {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    grid-column: initial;
+    justify-self: start;
+  }
+  .bicicleta-lista a {
+    grid-column: 1/-1;
+    place-self: satrt;
+  }
+  .bicicleta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid var(--cor-5);
+  }
+  .bicicleta-bg:nth-child(2) {
+    background: #000000;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-lista li {
+    font-size: 18px;
+  }
+}

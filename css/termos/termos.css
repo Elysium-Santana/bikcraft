@@ -1,0 +1,28 @@
+.termos{
+  background-color: var(--cor-0);
+  margin-bottom: 120px;
+}
+
+.termos-conteudo p{
+  margin-bottom: 32px;
+  max-width: 1000px;
+}
+.termos-conteudo h2{
+  margin-bottom: 40px;
+}
+@media (max-width:800px){     
+           
+  .termos{
+    
+    margin-bottom: 60px;
+  }
+  
+  .termos-conteudo p{
+    margin-bottom: 16px;
+    
+  }
+  .termos-conteudo h2{
+    margin-bottom: 20px;
+  }
+  
+}

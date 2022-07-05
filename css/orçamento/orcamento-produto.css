@@ -1,0 +1,174 @@
+.orcamento.contato-bg {
+  background: linear-gradient(to top, var(--cor-3) 50%, var(--cor-11) 0%);
+}
+.orcamento.contatos {
+  padding-bottom: 120px;
+}
+.contatos.orcamento {
+  margin-bottom: 0;
+}
+
+.orcamento-conteudo input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+.orcamento-conteudo > label {
+  margin-bottom: 24px;
+}
+.orcamento-conteudo {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+.tipo-conteudo {
+  display: none;
+}
+
+.tipo-conteudo ul h3 span::after {
+  content: "mensal";
+  display: block;
+  text-transform: lowercase;
+  font-size: 1.125rem;
+  text-align: right;
+}
+#bikcraft:checked ~ #tipo-bikcraft,
+#seguro:checked ~ #tipo-seguro {
+  display: block;
+}
+.seguros.orcamento {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+.seguros-lista-prata.orcamento,
+.seguros-lista-ouro.orcamento {
+  display: none;
+}
+#ouro:checked ~ #ouro-ul,
+#prata:checked ~ #prata-ul {
+  display: block;
+}
+#tipo-seguro ul li {
+  display: block;
+  background: url(../../img/icones/list.svg) no-repeat 0 4px;
+}
+#tipo-seguro ul li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+}
+#tipo-seguro ul h3 {
+  display: flex;
+  justify-content: space-between;
+}
+#tipo-seguro ul {
+  padding: 20px;
+  background-color: var(--cor-11);
+  margin-top: 12px;
+  border-radius: 5px;
+}
+#bikcraft,
+#bikcraft-lb {
+  grid-area: 2/1;
+}
+#seguro,
+#seguro-lb {
+  grid-area: 2/2;
+}
+.orcamento-conteudo input:focus + label {
+  border: 2px solid var(--cor-p1);
+  box-shadow: 0 0 0 3px var(--cor-p3);
+}
+.orcamento-conteudo input:checked + label {
+  background: var(--cor-1);
+}
+.orcamento-conteudo input[id="ouro"]:checked + label {
+  background: linear-gradient(#ffe5a3 0%, #f5b952 100%);
+  color: var(--cor-p4);
+}
+
+.bike-orcamento img {
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+.bike-orcamento h2 span {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--cor-7);
+}
+.bike-orcamento h2 {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/-1;
+}
+.bike-orcamento {
+  display: none;
+}
+#nimbus:checked ~ #nimbus-sec,
+#magic:checked ~ #magic-sec,
+#nebula:checked ~ #nebula-sec {
+  background-color: var(--cor-4);
+  padding: 20px;
+  margin-top: 12px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+#tipo-bikcraft label span {
+  display: none;
+}
+#tipo-bikcraft input:checked + label span {
+  display: inline-block;
+}
+
+#nimbus-ul li img {
+  max-width: 24px;
+  object-fit: contain;
+}
+#nimbus-ul li {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  #nimbus-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 5px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
+
+@media (max-width: 600px) {
+  #nimbus:checked ~ #nimbus-sec,
+  #magic:checked ~ #magic-sec,
+  #nebula:checked ~ #nebula-sec {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  #tipo-bikcraft label {
+    font-size: 1rem;
+  }
+  .orcamento-conteudo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .bike-orcamento h2,
+  .bike-orcamento img,
+  #seguro,
+  #seguro-lb {
+    grid-row: initial;
+    grid-column: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+    grid-area: initial;
+  }
+}
