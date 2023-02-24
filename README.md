@@ -14,6 +14,6 @@
 
 
 
-<p style='max-width: 20ch'> Desenvolvido em HTML, CSS3 e um pouco de javascript. O projeto foi construído do zero no figma, pondo em prática os conhecimentos obtidos em UI, partindo para o HTML , Design responsivo e posicionamento usando grid e flex box.<p/>
+## Desenvolvido em HTML, CSS3 e um pouco de javascript. O projeto foi construído do zero no figma, pondo em prática os conhecimentos obtidos em UI, partindo para o HTML , Design responsivo e posicionamento usando grid e flex box.
 
 
